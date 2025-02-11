@@ -28,3 +28,5 @@ FIFTEEN_YEAR=$(curl -s https://fred.stlouisfed.org/series/MORTGAGE15US | \
 grep -m 1 -oP '<span class="series-meta-observation-value">\K[^<]+')
 
 echo "15-Year Fixed Rate Mortgage: ${FIFTEEN_YEAR}%"
+
+echo ""
